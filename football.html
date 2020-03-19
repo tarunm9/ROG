@@ -1,0 +1,276 @@
+<!Doctype html>
+<html>
+<title>M4NCH35T3R</title>
+<head>
+<link rel="icon" href="logo.png">
+<style>
+b{
+border-radius: 30px;
+font-size: 23px;
+font-weight: 100;
+text-transform: uppercase;
+padding: 10px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+background-color: rgba(55,0,55,1);
+color:aliceblue;
+}
+b:hover{
+background-color:rgb(255,89,143);
+color:rgba(255,255,255,1);
+}
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+h1,footer{
+padding: 6px;
+background: rgba(255,89,143,0.8);
+}
+#mu{
+padding: 6px;
+background: rgb(16,16,16);
+}
+body{
+margin: 0;
+padding: 0;
+background-image: url(8.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+a,footer{
+color: floralwhite;
+text-decoration:none;
+padding: 10px;
+font-size: 23px;
+}
+    a{
+         font-family: "Candara";
+    }
+    footer{
+        font-family: "Candara";
+        background: url(pl.gif);
+    }
+    header{
+        background: url(pl.gif);
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #navbar {
+        overflow: hidden;
+        background-image: url(bf2.png);
+        padding: 5px;
+    
+}
+    #chelsea{
+        overflow: hidden;
+    }
+#chelsea a{
+    font-family: "Candara";
+    color: black;
+    font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}   
+#navbar a{
+    font-family: "Candara";
+  float:right;
+    color: black;
+    font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body id=top>
+<header><img src="p.png" style="width: 600px; height: 100" class="center"></header>
+
+    <div id="hall" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeGame()">&times;</a>
+  <div class="overlay-content">
+    <a href="gaming.html#apex">APEX LEGENDS</a>
+    <a href="gaming.html#bf5">BATTLEFIELD 5</a>
+    <a href="gaming.html#gta5">GTA V</a>
+  </div>
+</div>
+    
+<div id="leg" class="overlay">
+  <a href="javascript:void(1)" class="closebtn" onclick="closeFoot()">&times;</a>
+  <div class="overlay-content">
+    <a href="football.html#eng">ENGLAND</a>
+    <a href="football.html#mufc">MANCHESTER UNITED</a>
+  </div>
+</div>
+    
+<div id="navbar">
+    <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <a style="cursor: pointer;" onclick="game()">GAMING</a>
+    <a href="Home.html">&#127918;</a>
+  <a style="cursor: pointer;" onclick="foot()">FOOTBALL</a>
+</div>
+    
+<center><div id="chelsea" style="background: url(pl.gif);"><br>
+<a href="#ko"><b>ENGLAND</b></a>
+<a href="#ft"><b>MANCHESTER UNITED</b></a><a><br></a><br>
+</div></center>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("chelsea");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}    
+function game() {
+  document.getElementById("hall").style.height = "100%";
+}
+function closeGame() {
+  document.getElementById("hall").style.height = "0%";
+}
+    
+function foot() {
+  document.getElementById("leg").style.height = "100%";
+}
+function closeFoot() {
+  document.getElementById("leg").style.height = "0%";
+}
+</script>    
+    
+<div id="eng" style="background: url(eng2.jpg);"><br>
+<a id=ko><h1><center style="font-size: 64px;"><img src="eng.png" style="width:64px;height:64px;">  ENGLAND</center></h1>
+<br/></a>
+<a><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4mBFfb3W1eo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/></div>
+    
+<div style="background: url(eng3.jpg);"><br>
+<a id=g1><br><br></a><a><br/></a>
+<a>
+<img src="eng3.jpg" title="Harry Kane Celebrates the victory v Tunisia" style="width: 600px; height: 100" class='center'><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/></div>
+    
+<div style="background: url(eng4.jpg);"><br>
+<a id=ht><br><br></a><a><br/></a>
+<a>
+<img src="eng4.jpg" title="Marcus Rashford v Switzerland" style="width: 600px; height: 100" class='center'><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/></div>
+    
+<div style="background: url(eng1.jpg);"><br>
+<a id=g2><br><br></a><a><br/></a>
+<a>
+<img src="eng1.jpg" title="Euro 2020 Qualifier v Bulgaria" style="width: 600px; height: 100" class='center'><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/></div>
+
+<div id="mufc" style="background: url(mu2.jpg);"><br>
+<a id=ft><h1 id="mu"><center style="font-size: 64px;"><img src="mu.jpg" style="width:64px;height:64px;">  MANCHESTER UNITED</center></h1>
+<br/></a>
+<a><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fT6xeAw-XVY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/>
+</div>    
+    
+<div style="background: url(mu3.jpg);"><br>
+<a id=g3><br><br></a><a><br/></a>
+<a>
+<img src="mu3.jpg" title="Manchester United Away Kit 19/20" style="width: 600px; height: 100" class='center'><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/></div>
+    
+<div style="background: url(mu1.jpg);"><br>
+<a id=g4><br><br></a><a><br/></a>
+<a>
+<img src="mu1.jpg" title="Marcus Rashford v Newcastle United" style="width: 600px; height: 100" class='center'><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/></div>
+    
+<div style="background: url(pl1.jpg);"><br>
+<a><br><br></a><a><br/></a>
+<a>
+<img src="pl1.jpg" title="Premier League Match Ball 19/20" style="width: 600px; height: 100" class='center'><br/>
+</a>
+<center><a href="#top"><b> &#128314; </b></a></center><br/><br/><br/></div>
+
+<footer>
+  <p>Posted by: <a href="https://m4nch35t3r.wixsite.com/home">Tarun M &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>   <a href="https://premierleague.com/home">Premier League&trade; &nbsp; Manchester United FC&reg; &nbsp; APEX Legends&trade; &nbsp; Battlefield 5&reg; &nbsp; GTA V&reg;</a></p>
+  <p>Em@il: <a href="mailto:tarunm290699@gmail.com">
+  tarunm290699@gmail.com</a></p>
+    <p><center>&copy; 2019 M4NCH35T3R.Inc | All Rights Reseverd</center></p>
+</footer>
+
+</body>
+</html>
